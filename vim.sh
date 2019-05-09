@@ -2,8 +2,6 @@ ehco "Intalling vim-plug ..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-mkdir -p ~/.vim/plugged && cd ~/.vim/plugged && git clone https://github.com/fatih/molokai.git
-
 rm ~/.vimrc.bak
 mv ~/.vimrc ~/.vimrc.bak
 
