@@ -12,6 +12,7 @@ cat > ~/.vimrc <<_EOF_
     call plug#end()
 
     " set foldmethod=syntax
+    set backspace=indent,eol,start
     set number                  " 显示行号
     set cursorline              " 突出显示当前行
     set tabstop=4               " Tab键的宽度
