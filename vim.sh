@@ -1,9 +1,9 @@
-ehco "Intalling vim-plug ..."
+echo "Intalling vim-plug ..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-rm ~/.vimrc.bak
-mv ~/.vimrc ~/.vimrc.bak
+[-f ~/.vimrc.bak] && rm ~/.vimrc.bak
+[-f ~/.vimrc] && mv ~/.vimrc ~/.vimrc.bak
 
 cat > ~/.vimrc <<_EOF_
     call plug#begin('~/.vim/plugged')
